@@ -8,8 +8,18 @@ body {
 .text-lead {
     color: rgba(26,26,26,.9);
     font-family: garamond;
-    font-size: 34px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 5%;
+}
+.text-lead2 {
+    color: rgba(26,26,26,.9);
+    font-size: 20px;
+    font-family: nova-bold;
+}
+.text-lead3 {
+    color: rgba(26,26,26,.75);
+    font-size: 16px;
+    font-family: nova-bold;
 }
 .text-content {
     font-size: 16px;
@@ -32,7 +42,9 @@ body {
     position: relative;
     width: 100%;
     height: 790px;
-    background-color: #0a0a0a;
+    background-image: url(../media/landing-bg.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
     margin: 0;
     padding: 0;
     color: white;
@@ -87,8 +99,16 @@ body {
     width: 100%;
     background-color: #EDEEEF;
 }
+#profile-img {
+    float: left;
+    clear: none;
+}
+#profile-text {
+    float: right;
+    clear: none;
+}
 #section-experience {
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 #section-projects {
@@ -96,9 +116,20 @@ body {
     width: 100%;
     background-color: #EDEEEF;
 }
+.projects-project {
+    margin-bottom: 40px;
+}
+.project-img{
+    width: 240px;
+}
+#section-education {
+    width: 100%;
+    text-align: left;
+}
 #section-contact {
     text-align: center;
     width: 100%;
+    background-color: #EDEEEF;
 }
 
 
