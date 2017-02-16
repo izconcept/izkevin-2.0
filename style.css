@@ -1,0 +1,97 @@
+h1{
+    margin: 0;
+}
+body {
+    color: #6F6F70;
+    margin: 0;
+}
+.text-lead {
+    color: rgba(26,26,26,.9);
+    font-family: garamond;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.text-content {
+    font-size: 16px;
+    font-family: nova-regular;
+    line-height:1.8em;
+    color: rgba(26,26,26,.6);
+}
+.section {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.centered {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+#section-landing {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.landing-lead {
+    font-family:nova-light;
+    font-size: 22px;
+    text-align: center;
+}
+#landing-title {
+    text-align: center;
+    font-size: 60px;
+}
+#section-profile {
+    text-align: center;
+    width: 100%;
+    background-color: #EDEEEF;
+}
+#section-experience {
+    text-align: center;
+    width: 100%;
+}
+#section-projects {
+    text-align: center;
+    width: 100%;
+    background-color: #EDEEEF;
+}
+#section-contact {
+    text-align: center;
+    width: 100%;
+}
+
+
+.nova-regular {
+    font-family: nova-regular;
+}
+.nova-bold {
+    font-family: nova-bold;
+}
+.nova-light {
+    font-family: nova-light;
+}
+.garamond {
+    font-family: garamond;
+}
+
+@font-face {
+    font-family: nova-regular;
+    src: url(media/fonts/ProximaNova-Regular.otf);
+}
+@font-face {
+    font-family: nova-bold;
+    src: url(media/fonts/ProximaNova-Bold.otf);
+}
+@font-face {
+    font-family: nova-light;
+    src: url(media/fonts/ProximaNova-Light.otf);
+}
+@font-face {
+    font-family: garamond;
+    src: url(media/fonts/GaramondPremrPro-Capt.otf);
+}
