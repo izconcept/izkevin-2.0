@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/47183d5423.js"></script>
+        <script src="dependencies/parallax.min.js"></script>
         <link rel="stylesheet" href="CSS/style.css">
         <script src="javascript/index.js"></script>
     </head>
@@ -16,14 +17,14 @@
         
     <div id="section-landing">
         <div id="landing-nav">
-            <i id="nav-logo" class="fa fa-free-code-camp fa-4x" aria-hidden="true"></i>
+            <!--<i id="nav-logo" class="fa fa-free-code-camp fa-4x" aria-hidden="true"></i>-->
             <div id="nav-menu">
                 <div class="menu-item" style="color: white">HOME</div>
-                <div class="menu-item">PROFILE</div>
-                <div class="menu-item">EXPERIENCE</div>
-                <div class="menu-item">PROJECTS</div>
-                <div class="menu-item">EDUCATION</div>
-                <div class="menu-item" id="menu-contact">CONTACT</div>
+                <div class="menu-item" onclick="scrollTo('section-profile')">PROFILE</div>
+                <div class="menu-item" onclick="scrollTo('section-experience')">EXPERIENCE</div>
+                <div class="menu-item" onclick="scrollTo('section-projects')">PROJECTS</div>
+                <div class="menu-item" onclick="scrollTo('section-education')">EDUCATION</div>
+                <div class="menu-item" id="menu-contact" onclick="scrollTo('section-contact')">CONTACT</div>
             </div>
         </div>
         <div class="centered">
@@ -35,7 +36,11 @@
     <div id="section-profile" class="section container">
         <h1 class="text-lead">Things I enjoy doing: coding, designing, and getting hammered.</h1>
         <p class="text-content" id="profile-text">
-            I first started programming after watching a <a href="https://www.youtube.com/watch?v=dU1xS07N-FA"> youtube video</a>. This video changed my life. Forever.
+            I study software engineering at Concordia University.
+            In my spare time, I eat, drink, sleep, code, study, and chill.
+            Of all those things, I like coding and chilling the most; no surprise there.
+            My father once told me: "I don't care what you do in life, as long as you love it and you're good at it." I agree.<br/>
+            Anyways, here's my <a href="https://github.com/izconcept">GitHub</a>.
         </p>
     </div>
 
@@ -74,34 +79,34 @@
 
         <div class="row">
         <div class="col-md-4 projects-project">
-            <img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg">
+            <a href="http://trendsat.azurewebsites.net/"><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
             <h1 class="text-lead2">TRENDSAT</h1>
             <h1 class="text-lead3">COLLABORATIVE FILTERING TRAVEL RECOMMENDER SYSTEM</h1>
         </div>
         <div class="col-md-4 projects-project">
-            <img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg">
+            <a href="https://github.com/izconcept/trelloTagSync"><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
             <h1 class="text-lead2">TRELLO-SYNC</h1>
             <h1 class="text-lead3">GROUP AND MERGE TRELLO LABELS BASED OFF FUZZY STRING MATCHING</h1>
         </div>
         <div class="col-md-4 projects-project">
-            <img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg">
+            <a href="https://github.com/jusleg/soen341"><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
             <h1 class="text-lead2">STORYFLOW</h1>
             <h1 class="text-lead3">MULTI-USER STORIES ON INSTAGRAM</h1>
         </div>
         </div>
         <div class="row">
         <div class="col-md-4 projects-project">
-            <img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg">
+            <a href="https://github.com/izconcept/SpoilBlock"><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
             <h1 class="text-lead2">SPOILBLOCK</h1>
             <h1 class="text-lead3">TV SPOILER BLOCKING CHROME EXTENSION</h1>
         </div>
         <div class="col-md-4 projects-project">
-            <img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg">
+            <a href="https://github.com/izconcept/Trippy"><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
             <h1 class="text-lead2">TRIPPY</h1>
             <h1 class="text-lead3">SOCIAL MEDIA TRAVEL BOT</h1>
         </div>
         <div class="col-md-4 projects-project">
-            <a href=""><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
+            <a href="https://github.com/izconcept/Dogaroo"><img class="project-img" src="http://corpusdoportugues.org/images/home1.jpg"></a>
             <h1 class="text-lead2">DOGAROO</h1>
             <h1 class="text-lead3">PET ADOPTION WEBSITE</h1>
         </div>
@@ -122,8 +127,11 @@
     </div>
 
     <div id="section-contact" class="section">
-        <h1 class="text-lead">Contact me</h1>
-        <p class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h1 class="text-footer">Contact me</h1>
+        <a class="contact-icon" href="https://www.linkedin.com/in/kevin-zhang-659110114?"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <a class="contact-icon" href="https://www.github.com/izconcept"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        <a class="contact-icon" href="mailto:izkevin52@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+        <p style="color: #7D7D7F; font-size: 11px; margin-top: 15px;">© 2017 Kevin Zhang. All rights reserved.</p>
     </div>
 
     </body>
